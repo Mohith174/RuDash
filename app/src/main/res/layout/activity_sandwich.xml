@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SandwichActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/sandwichLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sandwich_title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/sandwichImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sandwich"
+            android:contentDescription="@string/sandwich_image_description"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/breadLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bread_label"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/sandwichBreadGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/sandwichBriocheRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brioche"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/sandwichWheatRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wheat_bread" />
+
+            <RadioButton
+                android:id="@+id/sandwichPretzelRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pretzel" />
+
+            <RadioButton
+                android:id="@+id/sandwichBagelRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bagel" />
+
+            <RadioButton
+                android:id="@+id/sandwichSourdoughRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sourdough" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/proteinLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/protein_label"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/proteinGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/roastBeefRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/roast_beef" />
+
+            <RadioButton
+                android:id="@+id/chickenRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chicken"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/salmonRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/salmon" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/sandwichAddOnsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_ons_label"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/sandwichLettuceCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lettuce" />
+
+        <CheckBox
+            android:id="@+id/sandwichTomatoesCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tomatoes" />
+
+        <CheckBox
+            android:id="@+id/sandwichOnionCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/onions" />
+
+        <CheckBox
+            android:id="@+id/sandwichAvocadoCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/avocado" />
+
+        <CheckBox
+            android:id="@+id/sandwichCheeseCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cheese"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/sandwichQuantityLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity_label"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sandwichQuantitySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/sandwichPriceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_label"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/sandwichPriceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_sandwich_price"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/sandwichAddToOrderButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add_to_order"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/sandwichComboButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/make_combo"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/sandwichMainMenuButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_menu"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

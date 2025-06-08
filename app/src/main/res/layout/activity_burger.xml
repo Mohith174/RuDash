@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BurgerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/burgerLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/burger_title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/burgerImage"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/burger"
+            android:contentDescription="@string/burger_image_description"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/pattyLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/patty_label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <RadioGroup
+            android:id="@+id/pattyGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/singlePattyRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/single_patty"
+                android:checked="true"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/doublePattyRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/double_patty"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/breadLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bread_label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <RadioGroup
+            android:id="@+id/breadGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/briocheRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brioche"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/wheatRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wheat_bread" />
+
+            <RadioButton
+                android:id="@+id/pretzelRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pretzel" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/addOnsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_ons_label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/lettuceCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lettuce" />
+
+        <CheckBox
+            android:id="@+id/tomatoesCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tomatoes" />
+
+        <CheckBox
+            android:id="@+id/onionCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/onions" />
+
+        <CheckBox
+            android:id="@+id/avocadoCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/avocado" />
+
+        <CheckBox
+            android:id="@+id/cheeseCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cheese"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/quantityLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity_label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/quantitySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/priceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price_label"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/priceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_price"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/addToOrderButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add_to_order"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/comboButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/make_combo"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/mainMenuButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_menu"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
