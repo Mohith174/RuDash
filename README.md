@@ -48,21 +48,18 @@ Dive into the building blocks of RuDash:
 *   `OrderActivity.java`: Review and manage your current order before placing it.
 *   `StoreOrdersActivity.java`: Access and manage your history of placed orders.
 
-### Data Adapters 🔄
-*   `FlavorAdapter.java`: A custom `RecyclerView.Adapter` that beautifully displays beverage flavors, each with a unique image.
-
 ### Data Blueprints (Models & Enums) 🧱
 *   **Core Models:**
     *   `MenuItem.java`: Abstract base class for all menu offerings.
     *   `Sandwich.java`, `Burger.java`, `Beverage.java`, `Side.java`: Specific classes for each food type.
     *   `Combo.java`: Represents a combined meal deal.
     *   `Order.java`: Holds details of the current order.
-    *   `StoredOrder.java`: Manages collections of multiple orders (order history).
-*   **Supporting Enums:** `Bread`, `Protein`, `AddOns`, `Flavor`, `Size`, `SideOption` provide predefined choices for customization.
+    *   `OrderManager.java`: Manages collections of multiple orders (order history).
+*   **Supporting Enums:** `Bread`, `Protein`, `AddOns`, SideOption`, `Flavor`, `Size` provide predefined choices for customization.
 
 ### ✨ UI Magic
-*   Visually appealing `RecyclerView` for beverage flavors, each with its own distinct image.
-*   Custom drawable resources (e.g., `cola.xml`, `diet_cola.xml`, `default_drink.xml`) for a polished look and feel.
+*   Visually appealing view for beverage flavors, each with its own distinct image.
+*   Custom drawable resources for a polished look and feel.
 *   Thoughtfully designed custom layouts for each food category, enhancing user experience.
 
 ## 🚀 Get It Running: Setup Guide
@@ -77,10 +74,11 @@ Ready to explore RuDash? Here’s how:
 ### Installation Steps 🛠️
 1.  **Clone the Repository:**
     ```sh
-    git clone https://github.com/your-username/rudash.git 
-    # Replace with your actual repository URL
+    git clone https://github.com/mohith174/rudash.git 
     ```
 2.  **Open in Android Studio:** Launch Android Studio and import the cloned project.
 3.  **Build & Run:** Let Android Studio sync and build the project. Run it on a Pixel 3a XL API 36 emulator or a physical device.
 
 ## 📂 Project Demo
+
+
