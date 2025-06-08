@@ -80,5 +80,6 @@ Ready to explore RuDash? Here’s how:
 3.  **Build & Run:** Let Android Studio sync and build the project. Run it on a Pixel 3a XL API 36 emulator or a physical device.
 
 ## 📂 Project Demo
-[https://youtube.com/shorts/pCAv_u2psdk?feature=share](url)
+[Watch Demo](https://www.youtube.com/watch?v=abc123)
+
 
